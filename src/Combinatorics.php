@@ -50,7 +50,7 @@ abstract class Combinatorics
      * @return int
      *             The number of element
      */
-    public function count()
+    public function count(): int
     {
         return count($this->toArray());
     }
@@ -61,7 +61,7 @@ abstract class Combinatorics
      * @return mixed[]
      *                 The dataset
      */
-    public function getDataset()
+    public function getDataset(): mixed
     {
         return $this->dataset;
     }
@@ -72,7 +72,7 @@ abstract class Combinatorics
      * @return int
      *             The length
      */
-    public function getLength()
+    public function getLength(): int
     {
         return (int) $this->length;
     }
@@ -111,7 +111,7 @@ abstract class Combinatorics
     /**
      * @return array<int, mixed>
      */
-    public function toArray()
+    public function toArray(): array
     {
         return [];
     }
