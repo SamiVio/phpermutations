@@ -31,7 +31,7 @@ abstract class Iterators extends Combinatorics implements Countable, IteratorInt
     /**
      * {@inheritdoc}
      */
-    public function key()
+    public function key(): mixed
     {
         return $this->key;
     }
@@ -41,7 +41,7 @@ abstract class Iterators extends Combinatorics implements Countable, IteratorInt
      *
      * @return void
      */
-    public function rewind()
+    public function rewind(): void
     {
         $this->key = 0;
     }
@@ -52,7 +52,7 @@ abstract class Iterators extends Combinatorics implements Countable, IteratorInt
      * @return array<int, mixed>
      *               The elements
      */
-    public function toArray()
+    public function toArray(): array
     {
         $data = [];
 
