@@ -23,7 +23,7 @@ abstract class Iterators extends Combinatorics implements Countable, IteratorInt
     /**
      * {@inheritdoc}
      */
-    public function current()
+    public function current(): mixed
     {
         return $this->current;
     }
